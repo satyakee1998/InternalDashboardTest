@@ -1,10 +1,19 @@
-window.onload=function FetchUserList()
+function selectOption()
 {
+
+if(document.getElementById("program").value == "MM"){
+ var apiurl = "/userDetailsList";
+} 
+else if(document.getElementById("program").value == "NIUM"){
+ var apiurl = "/userDetailsList2";
+}
+else{
+}
 
 
 	$.ajax({
 		method:'GET',
-		url:'/userDetailsList',
+		url:apiurl,
 	    timeout : 100000,
  success : function(data) {	
 	    	

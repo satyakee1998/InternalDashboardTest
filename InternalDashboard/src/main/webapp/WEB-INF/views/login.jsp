@@ -16,7 +16,7 @@ LoginPage
 
 <h1>Login Page</h1>
 
-<form action="/programpage" method="POST">
+<form action="/userlist" method="POST">
   
   <label for="email">EmailID:</label>
   <input type="email" id="email" name="email" placeholder="enter your email address"><br><br>

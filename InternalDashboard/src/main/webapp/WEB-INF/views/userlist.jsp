@@ -22,8 +22,23 @@ Userlist
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body onload="FetchUserList();">
-<table class="table" >
+<body>
+  <h1>Program Selection</h1>
+<form action="/userlist" method="POST">
+  <label>Select a program:</label>
+  <select id="program" onchange="selectOption()">
+  
+  <option >Select Program</option>
+   <option id="mm" value="MM">MM</option>
+    
+    <option id="nium" value="NIUM">NIUM</option>
+  </select>
+  <br><br>
+ 
+</form>
+
+
+<table class="table"  id = "userlist">
     <thead>
       <tr>
       <th>Sl No</th>
@@ -35,6 +50,10 @@ Userlist
     </thead>
     <tbody id="myUserTable"></tbody>
   </table>
-   <script src="resources/js/list.js"></script>
+  
+ 
+
+
+<script type="text/javascript"  src="resources/js/list.js"> </script>
 </body>
 </html>
