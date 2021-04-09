@@ -1,11 +1,16 @@
 function selectOption()
 {
-
 if(document.getElementById("program").value == "MM"){
- var apiurl = "/userDetailsList";
+	document.getElementById("userlist").style.display="block";
+ 	var apiurl = "/userDetailsList";
 } 
 else if(document.getElementById("program").value == "NIUM"){
- var apiurl = "/userDetailsList2";
+	document.getElementById("userlist").style.display="block";
+	var apiurl = "/userDetailsList2";
+}
+else if(document.getElementById("program").value == "SP"){
+	document.getElementById("userlist").style.display="none";
+
 }
 else{
 }

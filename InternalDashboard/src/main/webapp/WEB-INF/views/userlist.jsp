@@ -23,12 +23,13 @@ Userlist
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div></div>
   <h1>Program Selection</h1>
 <form action="/userlist" method="POST">
   <label>Select a program:</label>
   <select id="program" onchange="selectOption()">
   
-  <option >Select Program</option>
+  <option id="sp" value="SP">Select Program</option>
    <option id="mm" value="MM">MM</option>
     
     <option id="nium" value="NIUM">NIUM</option>
@@ -38,7 +39,7 @@ Userlist
 </form>
 
 
-<table class="table"  id = "userlist">
+<table style="display:none;width:add_width;" class="table"  id = "userlist">
     <thead>
       <tr>
       <th>Sl No</th>
