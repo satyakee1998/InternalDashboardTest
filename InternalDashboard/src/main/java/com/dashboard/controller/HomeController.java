@@ -1,6 +1,8 @@
 package com.dashboard.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -20,6 +22,11 @@ public class HomeController {
 	private OauthAuthentication oauthAuthentication;
 	@Autowired
 	private FetchNiumCustomers fetchNiumCustomers;
+	
+	@Value("${demo}") private String user;
+	
+	@Autowired
+    private Environment env;
 
 	
 
@@ -32,15 +39,13 @@ public class HomeController {
 		return mv;
 	}
 
-	@RequestMapping(value = "/programpage", method = RequestMethod.POST)
-	public ModelAndView user(LoginBean log) {
-		ModelAndView mv = new ModelAndView("programpage");
-		String user_email = log.getEmail();
-		String user_password = log.getPassword();
-		System.out.println(user_email);
-		System.out.println(user_password);
-		return new ModelAndView("programpage");
-	}
+	/*
+	 * @RequestMapping(value = "/programpage", method = RequestMethod.POST) public
+	 * ModelAndView user(LoginBean log) { ModelAndView mv = new
+	 * ModelAndView("programpage"); String user_email = log.getEmail(); String
+	 * user_password = log.getPassword(); System.out.println(user_email);
+	 * System.out.println(user_password); return new ModelAndView("programpage"); }
+	 */
 	
 	  @RequestMapping(value = "/userlist", method = RequestMethod.POST) 
 	  public ModelAndView programpage() { ModelAndView mv = new ModelAndView("userlist");
@@ -56,9 +61,11 @@ public class HomeController {
 	  
 	  
 	  String token = oauthAuthentication.createOauthToken("mithilesh@stylopay.com",
-	  "W@llet123", "http://developer.sandbox.stylopay.com:8081"); return
-	  fetchUserList.fetchcustomer("1", "15", token, "Agent_Code", "Sub_Agent_code",
-	  null, null, "http://developer.sandbox.stylopay.com:8081/api-mm");
+	  "W@llet123", "http://developer.sandbox.stylopay.com:8081"); 
+	  System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+env.getProperty("demo"));
+	  System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"+user);
+	  return fetchUserList.fetchcustomer("1", "15", token, "Agent_Code", "Sub_Agent_code",
+			  	null, null, "http://developer.sandbox.stylopay.com:8081/api-mm");
 	  
 	  }
 	 

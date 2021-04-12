@@ -23,7 +23,6 @@ Userlist
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div></div>
   <h1>Program Selection</h1>
 <form action="/userlist" method="POST">
   <label>Select a program:</label>
