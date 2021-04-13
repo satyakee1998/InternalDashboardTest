@@ -31,7 +31,7 @@ Userlist
   <option id="sp" value="SP">Select Program</option>
    <option id="mm" value="MM">MM</option>
     
-    <option id="nium" value="NIUM">NIUM</option>
+    <option id="nium" value="NIUM" >NIUM</option>
   </select>
   <br><br>
  
@@ -42,10 +42,10 @@ Userlist
     <thead>
       <tr>
       <th>Sl No</th>
-        <th id="userId">memberId</th>
-        <th>firstName </th>
-        <th>lastName</th>
-        <th>email_ID</th>
+        <th id="userId">companyId</th>
+        <th>companyName </th>
+        <th>email</th>
+        
       </tr>
     </thead>
     <tbody id="myUserTable"></tbody>
