@@ -19,13 +19,14 @@ import okhttp3.Response;
 public class ClientListNIUM {
 
 
-	String jsonResponse = null;
-	StringBuilder response = new StringBuilder();
+	String jsonResponse;
+	StringBuilder response;
 	
 	public String getcustomerlistNIUM() {
 		//String request=null;
 		
-		
+		jsonResponse="";
+		response=new StringBuilder();
 		
 		try {
 

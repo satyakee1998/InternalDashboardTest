@@ -69,7 +69,8 @@ public class FetchUserList {
 	}
 	/*
 	 * public static void main(String[] args) { FetchUserList fetch = new
-	 * FetchUserList(); OauthAuthentication oauthAuth = new OauthAuthentication();
+	 * FetchUserList(); 
+	 * OauthAuthentication oauthAuth = new OauthAuthentication();
 	 * String token=oauthAuth.createOauthToken("mithilesh@stylopay.com","W@llet123",
 	 * "http://developer.sandbox.stylopay.com:8081");
 	 * 

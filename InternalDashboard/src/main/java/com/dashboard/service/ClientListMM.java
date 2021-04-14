@@ -19,12 +19,13 @@ import okhttp3.Response;
 public class ClientListMM {
 
 
-	String jsonResponse = null;
-	StringBuilder response = new StringBuilder();
+	String jsonResponse;
+	StringBuilder response;
 	
 	public String getcustomerlistMM() {
 		//String request=null;
-		
+		jsonResponse="";
+		response=new StringBuilder();
 		
 		
 		try {
@@ -43,7 +44,6 @@ public class ClientListMM {
 			while ((jsonResponse = br.readLine()) != null) {
 
 				response =response.append(jsonResponse);
-
 			}
 			
 		}catch (MalformedURLException e) {

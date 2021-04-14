@@ -56,7 +56,7 @@ public class HomeController {
 	
 	  @RequestMapping(value = "/userlist", method = RequestMethod.POST) 
 	  public ModelAndView programpage() { 
-		  ModelAndView mv = new ModelAndView("userlist");
+		  ModelAndView c = new ModelAndView("userlist");
 	  
 	  return new ModelAndView("userlist"); }
 	 
