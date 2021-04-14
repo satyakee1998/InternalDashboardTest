@@ -17,8 +17,7 @@
 <title>Userlist</title>
 <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no'
 	name='viewport' />
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="resources/css/style.css" type="text/css">
 <script src="resources/js/tablemanager.js"></script>
 <style type="text/css">
@@ -39,7 +38,6 @@
 		<br>
 
 	</form>
-
 
 	<table style="display: none; width: add_width;" class="tablemanager"
 		id="userlist">

@@ -10,27 +10,33 @@ LoginPage
 </title>
 <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 <!-- CSS Files -->
-<link href="resources/css/style.css" type="text/css" rel="stylesheet" />
-<!-- <link href="resources/css/login.css" type="text/css" rel="stylesheet" /> -->
+<link href="../resources/css/login.css" type="text/css" rel="stylesheet" >
 </head>
-<body>
-
-<h1>Login Page</h1>
-
+<div class="wrapper">
+<div class="container">
+<h1>Welcome</h1>
 <form action="/userlist" method="POST">
-  
-  <label for="email">EmailID:</label>
-  <input type="email" id="email" name="email" placeholder="enter your email address"><br><br>
-   <label for="password">Password:</label>
-  <input type="password" id="password" name="password" placeholder="enter your password"><br><br>
-  <button type="submit" id="login-button">Login</button>
-</form>
+<label for="email"></label>
+  <input type="email" id="email" name="email" placeholder="enter your email address"><br>
+   <label for="password"></label>
+  <input type="password" id="password" name="password" placeholder="enter your password"><br>
+  <button type="submit"  id="login-button">login</button>
+ </form>
+ 
+</div>
 
-
+<ul class="bg-bubbles">
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
 </body>
 </html>
-
-
-
-
-
