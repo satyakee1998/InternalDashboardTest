@@ -94,6 +94,11 @@ public class HomeController {
 			  return clientListNIUM.getcustomerlistNIUM();
 		  
 		  }
+		  @RequestMapping(value = "/clientdetails", method = RequestMethod.GET) 
+		  public ModelAndView handleclient() { 
+			  ModelAndView c = new ModelAndView("clientdetails");
+		  
+		  return new ModelAndView("clientdetails"); }
 	
 
 	

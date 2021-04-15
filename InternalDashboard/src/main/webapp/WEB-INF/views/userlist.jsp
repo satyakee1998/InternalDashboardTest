@@ -26,7 +26,7 @@
 </head>
 <body>
 	<h1>Program Selection</h1>
-	<form action="/userlist" method="POST">
+	<form action="/userlist" method="GET">
 		<label>Select a program:</label> <select id="program"
 			onchange="selectOption()">
 

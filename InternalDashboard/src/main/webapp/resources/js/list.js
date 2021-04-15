@@ -51,7 +51,7 @@ function selectOption() {
 				var val = obj[i];
 
 
-				var table = '<tr><td>' + (i+1) + "\n" + '</td><td id="userId' + i + '" value="' + val['companyId'] + '" >' + val['companyId'] + "\n" + '</td><td>' + val['companyName'] + "\n" + '</td><td>' + val['email'] + "\n" + '</td><td>' + "<a href = '/nisginternalcustomer?companyId=" + val['companyId'] + "&email=" + val['email'] + "' class='bo'> Details</a> <div class='clearfix'></div></td></tr>";
+				var table = '<tr><td>' + (i+1) + "\n" + '</td><td id="userId' + i + '" value="' + val['companyId'] + '" >' + val['companyId'] + "\n" + '</td><td>' + val['companyName'] + "\n" + '</td><td>' + val['email'] + "\n" + '</td><td>' + "<a href = 'clientdetails' class='bo'> Details</a> <div class='clearfix'></div></td></tr>";
 				$('#myUserTable').append(table)
 
 			}
